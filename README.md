@@ -24,7 +24,7 @@ Or install it yourself as:
 
 ```ruby
 access_token = WeixinJsSDK::AccessToken.new(
-  app_id: ENV['WEXIN_APP_ID',
+  app_id: ENV['WEIXIN_APP_ID'],
   app_secret: ENV['WEIXIN_APP_SECRET']
 ).fetch
 #=> xxx
