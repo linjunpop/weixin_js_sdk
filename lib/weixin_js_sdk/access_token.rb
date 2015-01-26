@@ -15,8 +15,6 @@ module WeixinJsSDK
 
       json = Util.get_json(url)
 
-      return json['errmsg'] if json['errcode']
-
       access_token = json['access_token']
       expires_in = json['expires_in']
 

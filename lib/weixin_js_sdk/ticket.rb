@@ -13,8 +13,6 @@ module WeixinJsSDK
 
       json = Util.get_json(url)
 
-      return json['errmsg'] if (json['errcode'] != 0)
-
       ticket = json['ticket']
       expires_in = json['expires_in']
 

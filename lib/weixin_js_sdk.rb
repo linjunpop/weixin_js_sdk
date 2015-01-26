@@ -1,6 +1,7 @@
 require "weixin_js_sdk/version"
 
 require "weixin_js_sdk/util"
+require "weixin_js_sdk/errors"
 require "weixin_js_sdk/access_token"
 require "weixin_js_sdk/ticket"
 require "weixin_js_sdk/signature"
