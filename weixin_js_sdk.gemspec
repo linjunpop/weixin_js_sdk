@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["linjunpop@gmail.com"]
   spec.summary       = %q{A Weixin JS-SDK toolkit.}
   spec.description   = %q{A Weixin JS-SDK toolkit.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/linjunpop/weixin_js_sdk"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
