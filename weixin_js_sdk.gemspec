@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = WeixinJsSdk::VERSION
   spec.authors       = ["Jun Lin"]
   spec.email         = ["linjunpop@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A Weixin JS-SDK toolkit.}
+  spec.description   = %q{A Weixin JS-SDK toolkit.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
