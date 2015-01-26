@@ -2,6 +2,7 @@
 
 TODO: Write a gem description
 
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,7 +21,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+> http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+
+* Generate signature
+
+```ruby
+access_token = WeixinJsSDK::AccessToken.new(
+  app_id: ENV['WEXIN_APP_ID',
+  app_secret: ENV['WEIXIN_APP_SECRET']
+).fetch
+
+ticket = WeixinJsSDK::Ticket.new(access_token: access_token).fetch
+
+sign = WeixinJsSDK::Signature.new(
+  ticket: ticket,
+  nonce_str: 'Wm3WZYTPz0wzccnW',
+  timestamp: '1414587457',
+  url: 'http://mp.weixin.qq.com'
+).sign
+# => f4d90daf4b3bca3078ab155816175ba34c443a7b
+```
 
 ## Contributing
 
