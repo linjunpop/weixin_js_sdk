@@ -1,6 +1,10 @@
 # WeixinJsSdk
 
-a Weixin [JS-SDK](http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html) Toolkit.
+[![Code Climate](http://img.shields.io/codeclimate/github/linjunpop/weixin_js_sdk.svg)](https://codeclimate.com/github/linjunpop/weixin_js_sdk)
+[![Gem Version](http://img.shields.io/gem/v/weixin_js_sdk.svg)](https://rubygems.org/gems/weixin_js_sdk)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://linjunpop.mit-license.org)
+
+a Weixin [JS-SDK](http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html) toolkit.
 
 ## Installation
 
