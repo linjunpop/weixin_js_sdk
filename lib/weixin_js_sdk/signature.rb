@@ -19,8 +19,6 @@ module WeixinJsSDK
         url: @url
       }
 
-      puts str
-
       Digest::SHA1.hexdigest(str)
     end
   end
