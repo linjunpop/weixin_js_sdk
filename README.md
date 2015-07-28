@@ -30,22 +30,30 @@ Or install it yourself as:
 access_token = WeixinJsSDK::AccessToken.new(
   app_id: ENV['WEIXIN_APP_ID'],
   app_secret: ENV['WEIXIN_APP_SECRET']
-).fetch
+)
+#=> #<WeixinJsSDK::AccessToken:0x007ff9c488a111>
+access_token.token
 #=> xxx
+access_token.expires_in
+#=> 7200
 ```
 
 * Fetch Ticket
 
 ```ruby
-ticket = WeixinJsSDK::Ticket.new(access_token: access_token).fetch
+ticket = WeixinJsSDK::Ticket.new(access_token: access_token.token)
+#=> #<WeixinJsSDK::Ticket:0x007fe62d133c68>
+ticket.token
 #=> xxx
+ticket.expires_in
+#=> 7200
 ```
 
 * Generate Signature
 
 ```ruby
 signature = WeixinJsSDK::Signature.new(
-  ticket: ticket,
+  ticket: ticket.token,
   nonce_str: 'Wm3WZYTPz0wzccnW',
   timestamp: '1414587457',
   url: 'http://mp.weixin.qq.com'
