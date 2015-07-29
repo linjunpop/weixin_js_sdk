@@ -2,6 +2,10 @@
 
 ## master
 
+## v0.0.3
+
+* Fix bug
+
 ## v0.0.2
 
 * Deprecated `fetch`

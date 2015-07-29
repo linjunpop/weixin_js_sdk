@@ -9,7 +9,7 @@ module WeixinJsSDK
         access_token: access_token
       }
 
-      json = Util.get_json(url) rescue {}
+      json = Util.get_json(url)
 
       @token = json['ticket']
       @expires_in = json['expires_in']
