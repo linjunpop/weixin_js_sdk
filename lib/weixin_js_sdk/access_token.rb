@@ -4,7 +4,7 @@ module WeixinJsSDK
 
     attr_reader :token, :expires_in
 
-    def initialize(app_id: '', app_secret: '')
+    def initialize(app_id, app_secret)
       url = URI_TEMPLATE % {
         app_id: app_id,
         app_secret: app_secret
