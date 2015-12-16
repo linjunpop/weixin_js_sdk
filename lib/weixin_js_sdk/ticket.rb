@@ -4,7 +4,7 @@ module WeixinJsSDK
 
     attr_reader :token, :expires_in
 
-    def initialize(access_token: '')
+    def initialize(access_token)
       url = URI_TEMPLATE % {
         access_token: access_token
       }
